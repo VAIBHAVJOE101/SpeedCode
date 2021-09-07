@@ -1,0 +1,150 @@
+.Login{
+    height: 100vh;
+}
+
+.LoginCard{
+    padding: 30px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: rgba(128, 208, 199,0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 60vh;
+    box-shadow: 0px 0px 25px 10px rgb(101, 102, 102);
+    border-radius: 8px;
+    backface-visibility: 15%;
+    color: white;
+}
+
+.loginForm{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    display: flex;
+    text-align: left;
+}
+
+.RegistrationForm{
+    padding: 40px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    text-align: left;
+}
+
+.loginFormTopography{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+    text-align: center;
+
+}
+
+.LoginBottom{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.Loginbtn{
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+
+.success{
+    padding-left: 10px;
+    font-size: 14px;
+    color: green;
+    text-align: left;
+}
+
+.error{
+    padding-left: 10px;
+    font-size: 14px;
+    color: rgb(217, 255, 0);
+    text-align: left;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1899px) and (min-width: 1499px) {
+    .LoginCard{
+        padding: 40px;
+        width: 28%;
+        height: 70vh;
+    }
+    .loginGoogleButton{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 1499px) and (min-width: 960px) {
+    .LoginCard{
+        padding: 40px;
+        width: 40%;
+        height: 65vh;
+    }
+    .loginGoogleButton{
+        width: 50%;
+    }
+}
+
+@media (max-width: 960px) and (min-width: 600px) {
+    .LoginCard{
+        padding: 20px;
+        width: 60%;
+        height: 70vh;
+    }
+    .loginGoogleButton{
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .LoginCard{
+        padding: 20px;
+        width: 80%;
+        height: 70vh;
+    }
+    .loginGoogleButton{
+        width: 90%;
+    }
+}
+

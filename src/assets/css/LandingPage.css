@@ -1,0 +1,31 @@
+.LandingPage{
+    width: 1400px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.LandingPageHero{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.LandingPageContent{
+    flex:1;
+}
+
+.LandingPageImg{
+    flex:1;
+}
+
+.logoimage{
+    display: flex;
+}
+
+.logoimage >img{
+    height: 130px;
+}

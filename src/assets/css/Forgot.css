@@ -1,0 +1,65 @@
+.forgot{
+    height: 100vh;
+}
+
+.forgotCard{
+    padding: 40px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    background: rgba(128, 208, 199,0.2);
+    background: #F4F5F7;
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 30vh;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 8px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.error{
+    padding-left: 10px;
+    font-size: 14px;
+    color: rgb(217, 255, 0);
+    text-align: left;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1499px) and (min-width: 960px) {
+    .forgotCard{
+        padding: 40px;
+        width: 40%;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 960px) and (min-width: 600px) {
+    .forgotCard{
+        padding: 20px;
+        width: 60%;
+        height: 40vh;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .forgotCard{
+        padding: 20px;
+        width: 80%;
+        height: 40vh;
+    }
+}
+
